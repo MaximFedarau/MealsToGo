@@ -2,8 +2,8 @@ import React, { ReactElement } from 'react';
 import { StyleSheet } from 'react-native';
 import { Card } from 'react-native-paper';
 
-import { Restaurant } from '../../../types/interfaces';
-import { COLORS } from '../../../constants/colors';
+import { Restaurant } from 'types/interfaces';
+import { COLORS } from 'constants/colors';
 
 const RestaurantItem = ({ name, icon }: Restaurant): ReactElement => {
   return (

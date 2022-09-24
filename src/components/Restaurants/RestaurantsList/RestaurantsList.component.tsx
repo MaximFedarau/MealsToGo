@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import { FlatList } from 'react-native';
 
-import RestaurantItem from '../RestaurantItem/RestaurantItem.component';
-import { Restaurant } from '../../../types/interfaces';
+import RestaurantItem from 'components/Restaurants/RestaurantItem/RestaurantItem.component';
+import { Restaurant } from 'types/interfaces';
 
 const RestaurantsList = (): ReactElement => {
   const data: Restaurant[] = [

@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { StatusBar } from 'expo-status-bar';
 
-import Restaurants from './src/screens/Restaurants.screen';
+import Restaurants from 'screens/Restaurants.screen';
 
 const App = (): ReactElement => {
   return (

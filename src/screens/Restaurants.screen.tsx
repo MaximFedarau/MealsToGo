@@ -8,8 +8,8 @@ import {
 } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 
-import RestaurantsList from '../components/Restaurants/RestaurantsList/RestaurantsList.component';
-import { COLORS } from '../constants/colors';
+import RestaurantsList from 'components/Restaurants/RestaurantsList/RestaurantsList.component';
+import { COLORS } from 'constants/colors';
 
 const Restaurants = (): ReactElement => {
   const [searchText, setSearchText] = React.useState('');
