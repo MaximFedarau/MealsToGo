@@ -1,11 +1,18 @@
 import styled, { DefaultTheme } from 'styled-components/native';
 
 export const DefaultText = styled.Text`
-  font-size: 16px;
+  font-size: ${({ theme }) => theme.fonts.sizes.lg}px;
   color: ${({ theme }) => theme.colors.black};
 `;
 
 export const RestaurantTitle = styled(DefaultText)`
-  padding: 16px;
-  font-family: ${({ theme }: { theme: DefaultTheme }) => theme.fonts.primary};
+  padding: 0 ${({ theme }: { theme: DefaultTheme }) => theme.paddings.md}px;
+  font-family: ${({ theme }: { theme: DefaultTheme }) =>
+    theme.fonts.families.primary};
+`;
+
+export const RestaurantAddress = styled(DefaultText)`
+  padding: 0 ${({ theme }: { theme: DefaultTheme }) => theme.paddings.md}px;
+  font-family: ${({ theme }: { theme: DefaultTheme }) =>
+    theme.fonts.families.secondary};
 `;

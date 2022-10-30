@@ -14,3 +14,5 @@ export const SearchContainer = styled.View`
   margin: ${({ theme }) => theme.margins.md}px;
   margin-top: ${Platform.OS === 'android' ? StatusBar.currentHeight : 0}px;
 `;
+
+export const RestaurantInfo = styled.View``;
