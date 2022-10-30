@@ -1,4 +1,4 @@
-import styled from 'styled-components/native';
+import styled, { DefaultTheme } from 'styled-components/native';
 
 export const DefaultText = styled.Text`
   font-size: 16px;
@@ -7,4 +7,5 @@ export const DefaultText = styled.Text`
 
 export const RestaurantTitle = styled(DefaultText)`
   padding: 16px;
+  font-family: ${({ theme }: { theme: DefaultTheme }) => theme.fonts.primary};
 `;
