@@ -1,4 +1,4 @@
-export const MARGINS = {
+export const SIZES = {
   sm: 8,
   md: 16,
   lg: 24,

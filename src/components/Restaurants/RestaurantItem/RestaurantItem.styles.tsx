@@ -1,8 +1,6 @@
 import styled from 'styled-components/native';
 import { Card as RNPCard } from 'react-native-paper';
 
-import { DefaultTheme } from 'styled-components/native';
-
 export const Card = styled(RNPCard)`
   background-color: ${({ theme }) => theme.colors.white};
 `;
@@ -12,8 +10,8 @@ export const Icon = styled(Card.Cover)`
   background-color: ${({ theme }) => theme.colors.white};
 `;
 
-export const Rating = styled.View<{ rating: number; theme: DefaultTheme }>`
+export const Rating = styled.View<{ rating: number }>`
   justify-content: center;
+  width: ${({ theme, rating }) => theme.sizes.lg * rating}px;
   overflow: hidden;
-  width: ${({ theme, rating }) => theme.margins.lg * rating}px;
 `;

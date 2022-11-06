@@ -1,14 +1,15 @@
 import React from 'react';
 
 import {
+  RestaurantInfo,
+  RestaurantRating,
+} from 'components/Defaults/Container/Container.component';
+import {
   RestaurantTitle,
   RestaurantAddress,
 } from 'components/Defaults/Text/Text.component';
 import { Card, Icon, Rating } from './RestaurantItem.styles';
-import {
-  RestaurantInfo,
-  RestaurantRating,
-} from 'components/Defaults/Container/Container.component';
+import { SIZES } from 'constants/sizes';
 import { Restaurant } from 'types/interfaces';
 import Star from 'assets/static/svgs/Star';
 
@@ -34,7 +35,7 @@ const RestaurantItem: React.FC<Restaurant> = ({
         <RestaurantRating>
           {ratingToArray().map((item, index) => (
             <Rating key={index} rating={item}>
-              <Star width={24} height={24} />
+              <Star size={SIZES.lg} />
             </Rating>
           ))}
         </RestaurantRating>
