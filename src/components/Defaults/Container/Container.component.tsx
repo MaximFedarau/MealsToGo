@@ -15,4 +15,10 @@ export const SearchContainer = styled.View`
   margin-top: ${Platform.OS === 'android' ? StatusBar.currentHeight : 0}px;
 `;
 
-export const RestaurantInfo = styled.View``;
+export const RestaurantInfo = styled.View`
+  padding: ${({ theme }) => theme.paddings.md}px;
+`;
+
+export const RestaurantRating = styled.View`
+  flex-direction: row;
+`;

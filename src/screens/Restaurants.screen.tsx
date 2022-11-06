@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react';
+import React from 'react';
 import { Searchbar } from 'react-native-paper';
 
 import {
@@ -9,15 +9,13 @@ import {
 
 import RestaurantsList from 'components/Restaurants/RestaurantsList/RestaurantsList.component';
 
-const Restaurants = (): ReactElement => {
+const Restaurants: React.FC = () => {
   const [searchText, setSearchText] = React.useState('');
-
   return (
     <Container>
       <SearchContainer>
         <Searchbar value={searchText} onChangeText={setSearchText} />
       </SearchContainer>
-
       <ContentContainer>
         <RestaurantsList />
       </ContentContainer>

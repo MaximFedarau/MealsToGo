@@ -6,13 +6,11 @@ export const DefaultText = styled.Text`
 `;
 
 export const RestaurantTitle = styled(DefaultText)`
-  padding: 0 ${({ theme }: { theme: DefaultTheme }) => theme.paddings.md}px;
   font-family: ${({ theme }: { theme: DefaultTheme }) =>
     theme.fonts.families.primary};
 `;
 
 export const RestaurantAddress = styled(DefaultText)`
-  padding: 0 ${({ theme }: { theme: DefaultTheme }) => theme.paddings.md}px;
   font-family: ${({ theme }: { theme: DefaultTheme }) =>
     theme.fonts.families.secondary};
 `;
