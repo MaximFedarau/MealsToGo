@@ -1,21 +1,30 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
+import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ThemeProvider } from 'styled-components/native';
 
-export default function App() {
+import Restaurants from 'screens/Restaurants.screen';
+import { THEME } from 'constants/theme';
+
+const App = (): ReactElement | null => {
+  const [fontsLoaded] = useFonts({
+    'Oswald-Regular': require('./assets/fonts/Oswald/Oswald-Regular.ttf'),
+    'Lato-Regular': require('./assets/fonts/Lato/Lato-Regular.ttf'),
+    'Lato-Bold': require('./assets/fonts/Lato/Lato-Bold.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar style="dark" />
+      <ThemeProvider theme={THEME}>
+        <Restaurants />
+      </ThemeProvider>
+    </>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
