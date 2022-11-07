@@ -17,12 +17,3 @@ export const Icon = styled(Card.Cover)<{ isOpen?: boolean }>`
   background-color: ${COLORS.white};
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0.5)};
 `;
-
-export const Rating = styled.View<{ rating: number }>`
-  height: ${({ theme }) => theme.sizes.xl}px;
-  width: ${({ theme, rating }) => theme.sizes.xl * rating}px;
-  margin-right: ${({ theme }) => theme.sizes.sm / 4}px; /* gap */
-  padding-top: ${({ theme }) =>
-    theme.sizes.xl / theme.sizes.md}px; /* centering icon */
-  overflow: hidden;
-`;

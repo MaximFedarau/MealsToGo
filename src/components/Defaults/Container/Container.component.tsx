@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import { Platform, StatusBar } from 'react-native';
 
-export const Container = styled.SafeAreaView`
+export const SafeAreaContainer = styled.SafeAreaView`
   flex: 1;
 `;
 
@@ -23,4 +23,13 @@ export const RestaurantRating = styled.View`
   flex-direction: row;
   align-items: center;
   margin: ${({ theme }) => theme.sizes.sm}px 0;
+`;
+
+export const Rating = styled.View<{ rating: number }>`
+  height: ${({ theme }) => theme.sizes.xl}px;
+  width: ${({ theme, rating }) => theme.sizes.xl * rating}px;
+  margin-right: ${({ theme }) => theme.sizes.sm / 4}px; /* gap */
+  padding-top: ${({ theme }) =>
+    theme.sizes.xl / theme.sizes.md}px; /* centering icon */
+  overflow: hidden;
 `;

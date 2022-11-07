@@ -3,13 +3,14 @@ import React from 'react';
 import {
   RestaurantInfo,
   RestaurantRating,
+  Rating,
 } from 'components/Defaults/Container/Container.component';
 import {
   RestaurantTitle,
   RestaurantAddress,
   RestaurantRating as RestaurantRatingText,
 } from 'components/Defaults/Text/Text.component';
-import { Card, Icon, Rating } from './RestaurantItem.styles';
+import { Card, Icon } from './RestaurantItem.styles';
 import { SIZES } from 'constants/sizes';
 import { COLORS } from 'constants/colors';
 import { Restaurant } from 'types/interfaces';

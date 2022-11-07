@@ -2,7 +2,7 @@ import React from 'react';
 import { Searchbar } from 'react-native-paper';
 
 import {
-  Container,
+  SafeAreaContainer,
   SearchContainer,
   ContentContainer,
 } from 'components/Defaults/Container/Container.component';
@@ -12,14 +12,14 @@ import RestaurantsList from 'components/Restaurants/RestaurantsList/RestaurantsL
 const Restaurants: React.FC = () => {
   const [searchText, setSearchText] = React.useState('');
   return (
-    <Container>
+    <SafeAreaContainer>
       <SearchContainer>
         <Searchbar value={searchText} onChangeText={setSearchText} />
       </SearchContainer>
       <ContentContainer>
         <RestaurantsList />
       </ContentContainer>
-    </Container>
+    </SafeAreaContainer>
   );
 };
 
