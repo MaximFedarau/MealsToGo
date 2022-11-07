@@ -10,6 +10,7 @@ const App = (): ReactElement | null => {
   const [fontsLoaded] = useFonts({
     'Oswald-Regular': require('./assets/fonts/Oswald/Oswald-Regular.ttf'),
     'Lato-Regular': require('./assets/fonts/Lato/Lato-Regular.ttf'),
+    'Lato-Bold': require('./assets/fonts/Lato/Lato-Bold.ttf'),
   });
 
   if (!fontsLoaded) {

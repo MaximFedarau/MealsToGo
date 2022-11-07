@@ -7,9 +7,16 @@ export const DefaultText = styled(Text)`
 `;
 
 export const RestaurantTitle = styled(DefaultText)`
-  font-family: ${({ theme }) => theme.fonts.families.primary};
+  font-family: ${({ theme }) => theme.fonts.families['primary-bold']};
+  font-size: ${({ theme }) => theme.fonts.sizes['3xl']}px;
 `;
 
 export const RestaurantAddress = styled(DefaultText)`
-  font-family: ${({ theme }) => theme.fonts.families.secondary};
+  font-family: ${({ theme }) => theme.fonts.families.primary};
+  font-size: ${({ theme }) => theme.fonts.sizes.lg}px;
+`;
+
+export const RestaurantRating = styled(DefaultText)`
+  margin-right: ${({ theme }) => theme.sizes.sm}px; /* gap */
+  font-family: ${({ theme }) => theme.fonts.families.primary};
 `;

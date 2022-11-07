@@ -5,6 +5,5 @@ export interface Restaurant {
   photos: string[];
   address: string;
   rating: number;
-  isOpenNow: boolean;
-  isOpenTemporarily: boolean;
+  isOpen: boolean;
 }

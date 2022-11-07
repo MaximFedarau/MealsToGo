@@ -1,6 +1,7 @@
 export const FONTS = {
   families: {
     primary: 'Lato-Regular',
+    'primary-bold': 'Lato-Bold',
     secondary: 'Oswald-Regular',
   },
   sizes: {

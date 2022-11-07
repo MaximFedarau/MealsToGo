@@ -2,12 +2,12 @@ import styled from 'styled-components/native';
 import { Platform, StatusBar } from 'react-native';
 
 export const Container = styled.SafeAreaView`
-  flex-grow: 1;
+  flex: 1;
 `;
 
 export const ContentContainer = styled.View`
-  flex-grow: 1;
-  padding: ${({ theme }) => theme.sizes.md}px;
+  flex: 1;
+  padding: 0 ${({ theme }) => theme.sizes.md}px;
 `;
 
 export const SearchContainer = styled.View`
@@ -21,4 +21,6 @@ export const RestaurantInfo = styled.View`
 
 export const RestaurantRating = styled.View`
   flex-direction: row;
+  align-items: center;
+  margin: ${({ theme }) => theme.sizes.sm}px 0;
 `;
