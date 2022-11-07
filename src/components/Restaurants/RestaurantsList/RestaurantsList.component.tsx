@@ -24,13 +24,12 @@ const RestaurantsList: React.FC = () => {
     },
   ];
   return (
-    <>
-      <FlatList
-        data={data}
-        renderItem={({ item }) => <RestaurantItem {...item} />}
-        keyExtractor={item => item.name}
-      />
-    </>
+    <FlatList
+      data={data}
+      renderItem={({ item }) => <RestaurantItem {...item} />}
+      keyExtractor={item => item.name}
+      showsVerticalScrollIndicator={false}
+    />
   );
 };
 

@@ -11,8 +11,10 @@ export const ContentContainer = styled.View`
 `;
 
 export const SearchContainer = styled.View`
-  margin: ${({ theme }) => theme.sizes.md}px;
-  margin-top: ${Platform.OS === 'android' ? StatusBar.currentHeight : 0}px;
+  margin: ${({ theme }) =>
+    `${Platform.OS === 'android' ? StatusBar.currentHeight : 0}px ${
+      theme.sizes.md
+    }px ${theme.sizes.md}px`};
 `;
 
 export const RestaurantInfo = styled.View`

@@ -11,8 +11,8 @@ import {
   RestaurantRating as RestaurantRatingText,
 } from 'components/Defaults/Text/Text.component';
 import { Card, Icon } from './RestaurantItem.styles';
-import { SIZES } from 'constants/sizes';
-import { COLORS } from 'constants/colors';
+import { SIZES } from 'constants/theme/sizes';
+import { COLORS } from 'constants/theme/colors';
 import { Restaurant } from 'types/interfaces';
 import Star from 'assets/static/svgs/Star';
 

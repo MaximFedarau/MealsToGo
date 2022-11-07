@@ -1,11 +1,11 @@
 import styled from 'styled-components/native';
 import { Card as RNPCard } from 'react-native-paper';
 
-import { COLORS } from 'constants/colors';
+import { COLORS } from 'constants/theme/colors';
 
 export const Card = styled(RNPCard)`
   margin: ${({ theme }) =>
-    `${theme.sizes.sm / 2}px ${theme.sizes.sm / 2}px ${theme.sizes.lg}px`};
+    `${theme.sizes.sm / 2}px ${theme.sizes.sm / 2}px ${theme.sizes.md}px`};
   border-radius: ${({ theme }) => theme.sizes.md}px;
   background-color: ${({ theme }) => theme.colors.white};
   overflow: hidden;
