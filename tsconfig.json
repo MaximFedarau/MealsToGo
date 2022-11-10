@@ -11,7 +11,7 @@
       "types/*": ["./src/types/*"],
       "constants/*": ["./src/constants/*"],
       "assets/*": ["./assets/*"],
-      "api/*": ["./api/*"]
+      "api/*": ["./src/api/*"]
     }
   }
 }
