@@ -6,7 +6,6 @@ import {
   SearchContainer,
   ContentContainer,
 } from 'components/Defaults/Container/Container.component';
-
 import RestaurantsList from 'components/Restaurants/RestaurantsList/RestaurantsList.component';
 
 const Restaurants: React.FC = () => {
