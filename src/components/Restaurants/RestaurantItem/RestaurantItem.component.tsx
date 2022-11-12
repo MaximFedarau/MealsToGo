@@ -13,7 +13,7 @@ import {
 import { Card, Icon } from './RestaurantItem.styles';
 import { SIZES } from 'constants/theme/sizes';
 import { COLORS } from 'constants/theme/colors';
-import { Restaurant } from 'types/interfaces';
+import { Restaurant } from 'types/restaurants';
 import Star from 'assets/static/svgs/Star';
 
 const RestaurantItem: React.FC<Restaurant> = ({

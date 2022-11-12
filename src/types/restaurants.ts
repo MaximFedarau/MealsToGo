@@ -1,4 +1,3 @@
-//Restaurant Interface
 export interface Restaurant {
   name: string;
   icon: string;

@@ -2,7 +2,7 @@ import React from 'react';
 import { FlatList } from 'react-native';
 
 import RestaurantItem from 'components/Restaurants/RestaurantItem/RestaurantItem.component';
-import { Restaurant } from 'types/interfaces';
+import { Restaurant } from 'types/restaurants';
 
 const RestaurantsList: React.FC = () => {
   const data: Restaurant[] = [
