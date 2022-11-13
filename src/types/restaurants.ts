@@ -1,8 +1,41 @@
 export interface Restaurant {
-  name: string;
+  businessStatus: string;
+  geometry: {
+    location: {
+      lat: number;
+      lng: number;
+    };
+    viewport: {
+      northeast: {
+        lat: number;
+        lng: number;
+      };
+      southwest: {
+        lat: number;
+        lng: number;
+      };
+    };
+  };
   icon: string;
-  photos: string[];
-  address: string;
+  name: string;
+  openingHours: {
+    openNow: boolean;
+  };
+  photos: {
+    height: number;
+    htmlAttributions: string[];
+    photoReference: string;
+    width: number;
+  }[];
+  placeId: string;
+  plusCode: {
+    compoundCode: string;
+    globalCode: string;
+  };
   rating: number;
-  isOpen: boolean;
+  reference: string;
+  scope: string;
+  types: string[];
+  userRatingsTotal: number;
+  vicinity: string;
 }
