@@ -1,4 +1,5 @@
 import React, { ReactElement } from 'react';
+import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
@@ -42,6 +43,7 @@ const App = (): ReactElement | null => {
               headerShown: false,
               tabBarActiveTintColor: THEME.colors.black,
               tabBarInactiveTintColor: THEME.colors.darkGray,
+              tabBarLabelStyle: styles.tabBarLabel,
             }}>
             <Tab.Screen
               name={SCREENS.RESTAURANTS}
@@ -56,5 +58,11 @@ const App = (): ReactElement | null => {
     </>
   );
 };
+
+const styles = StyleSheet.create({
+  tabBarLabel: {
+    fontWeight: '600',
+  },
+});
 
 export default App;

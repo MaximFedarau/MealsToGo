@@ -13,15 +13,15 @@ import {
 import { Card, Icon } from './RestaurantItem.styles';
 import { SIZES } from 'constants/theme/sizes';
 import { COLORS } from 'constants/theme/colors';
-import { Restaurant } from 'types/interfaces';
+import { Restaurant } from 'types/restaurants';
 import Star from 'assets/static/svgs/Star';
 
 const RestaurantItem: React.FC<Restaurant> = ({
   name,
   icon,
-  address,
+  vicinity,
   rating,
-  isOpen,
+  openingHours,
 }) => {
   const ratingToArray = React.useCallback(() => {
     const truncatedRating = Math.trunc(rating); // 4.9 => 4
@@ -43,7 +43,7 @@ const RestaurantItem: React.FC<Restaurant> = ({
   }, [rating]);
   return (
     <Card>
-      <Icon isOpen={isOpen} source={{ uri: icon }} />
+      <Icon isOpen={openingHours.openNow} source={{ uri: icon }} />
       <RestaurantInfo>
         <RestaurantTitle>{name}</RestaurantTitle>
         <RestaurantRating>
@@ -54,7 +54,7 @@ const RestaurantItem: React.FC<Restaurant> = ({
             </Rating>
           ))}
         </RestaurantRating>
-        <RestaurantAddress>{address}</RestaurantAddress>
+        <RestaurantAddress>{vicinity}</RestaurantAddress>
       </RestaurantInfo>
     </Card>
   );
